@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap gallay</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+  body {
+    background-color: #eee;
+  }
+.m-navbar {
+  background-color: skyblue;
+  padding: 0 20px;
+  margin: 0 0 30px 0;
+}
+.m-navbar .nav-link {
+  color: #fff !important;
+  transition: 500ms;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+img.logo {
+    width: 72px;
+}
+.navbar-brand {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 500ms;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  </style>
+
+</head>
+<body>
+ <div class="container">
+<nav class="navbar navbar-expand-md m-navbar navbar-light">
+  <a class="navbar-brand" href="#">
+    <img src="Images/Pappo.jpg" alt="My logo" class="logo">
+    Jahirul Islam Pappo
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Gallay.html">Gallary</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Acedemic.html">Table</a>
+      </li>
+      
+    </ul>
+  </div>
+
+</nav>
+
+<h2>Images</h2>
+<hr>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="11.jpg" alt="Los Angeles" class="d-block img-fluid" >
+      <div class="carousel-caption">
+        <h3>CAR</h3>
+        <p> The falls' total height is 20 metres (66 ft) and 40 metres (130 ft) in width, making it the broadest waterfall in Taiwan</p>
+      </div>
+
+    </div>
+    <div class="carousel-item">
+      <img src="2.jpg" alt="Chicago" class="d-block img-fluid" >
+      <div class="carousel-caption">
+        <h3>CAR</h3>
+        <p>thiopia is a land of natural contrasts, from the tops of the rugged  </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="3.jpg" alt="New York" class="d-block img-fluid" >
+      <div class="carousel-caption">
+        <h3>CAR </h3>
+        <p>
+        Bangladesh is a small and beautiful asian country bordered </p>
+      </div>
+    </div>
+	
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $('.carousel').carousel({
+    interval : 15000
+  });
+</script>
+</body>
+</html>
